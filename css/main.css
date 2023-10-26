@@ -640,6 +640,13 @@ th {
   width: 400px;
   height: 600px;
 }
+.ctci-Team_Appreciation_Week .MakeCard .card-Preview .Finish-card .card-block .card-template .photo {
+  height: 600px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .ctci-Team_Appreciation_Week .MakeCard .card-Preview .Finish-card .card-block .card-template .photo a {
   height: 100%;
   display: block;

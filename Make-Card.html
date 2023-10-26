@@ -200,8 +200,9 @@
           const reader = new FileReader();
           reader.onload = function (e) {
             const imageURL = e.target.result;
-
-            $(".card-template .photo").html(`<img src="${imageURL}" alt="" />`);
+            $(".card-template .photo").css({
+              "background-image": `url(${imageURL})`,
+            });
           };
           reader.readAsDataURL(file);
         }
@@ -210,9 +211,7 @@
 
       for (let i = 0; i < 3; i++) {
         $($(".choose-card .small-card")[i]).on("click", function () {
-          if ($(".card-template .photo img").length < 1) {
-            alert("請上傳圖片!!");
-          } else {
+          if ($(".card-template .photo").css("backgroundImage") !== "none") {
             $(".choose-card .small-card").removeClass("small-card__active");
             $($(".choose-card .small-card")[i]).addClass("small-card__active");
             $(".card-template .card").html(
@@ -225,6 +224,8 @@
             // $(".card-Txt .card-right").html(
             //   `<img src="./images/card/card-test.gif" alt="">`
             // );
+          } else {
+            alert("請上傳圖片!!");
           }
         });
       }

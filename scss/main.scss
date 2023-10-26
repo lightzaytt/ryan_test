@@ -268,9 +268,19 @@
             }
 
             .photo {
+              height: 600px;
+              width: 400px;
+              background-size: cover;
+              background-position: center;
+              background-repeat: no-repeat;
               a {
                 height: 100%;
                 display: block;
+              }
+              img {
+                // max-height: 600px;
+                // width: auto;
+                // right: 55%;
               }
             }
           }
