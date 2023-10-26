@@ -605,6 +605,7 @@ th {
 .ctci-Team_Appreciation_Week .MakeCard .card-Preview .Finish-card .card-block {
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 .ctci-Team_Appreciation_Week .MakeCard .card-Preview .Finish-card .card-block .card-template,
 .ctci-Team_Appreciation_Week .MakeCard .card-Preview .Finish-card .card-block .card-Txt {

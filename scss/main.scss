@@ -224,7 +224,7 @@
         .card-block {
           display: flex;
           position: relative;
-
+          overflow: hidden;
           .card-template,
           .card-Txt {
             width: 400px;
