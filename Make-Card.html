@@ -81,7 +81,9 @@
             <div class="small-card">
               <img src="./images/card/card-003.gif" alt="" />
             </div>
-            <div class="small-card">4</div>
+            <div class="small-card">
+              <img src="./images/card/card-004.gif" alt="" />
+            </div>
             <div class="small-card">5</div>
             <div class="small-card">6</div>
             <div class="small-card">7</div>
@@ -200,18 +202,19 @@
           const reader = new FileReader();
           reader.onload = function (e) {
             const imageURL = e.target.result;
-            $(".card-template .photo").css({
-              "background-image": `url(${imageURL})`,
-            });
+            $(".card-template .photo").css(
+              "background-image",
+              `url(${imageURL})`
+            );
           };
           reader.readAsDataURL(file);
         }
         e.target.value = "";
       });
 
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < 4; i++) {
         $($(".choose-card .small-card")[i]).on("click", function () {
-          if ($(".card-template .photo").css("backgroundImage") !== "none") {
+          if ($(".card-template .photo").attr("style") !== undefined) {
             $(".choose-card .small-card").removeClass("small-card__active");
             $($(".choose-card .small-card")[i]).addClass("small-card__active");
             $(".card-template .card").html(
