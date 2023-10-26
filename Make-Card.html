@@ -84,10 +84,18 @@
             <div class="small-card">
               <img src="./images/card/card-004.gif" alt="" />
             </div>
-            <div class="small-card">5</div>
-            <div class="small-card">6</div>
-            <div class="small-card">7</div>
-            <div class="small-card">8</div>
+            <div class="small-card">
+              <img src="./images/card/card-005.gif" alt="" />
+            </div>
+            <div class="small-card">
+              <img src="./images/card/card-006.gif" alt="" />
+            </div>
+            <div class="small-card">
+              <img src="./images/card/card-007.gif" alt="" />
+            </div>
+            <div class="small-card">
+              <img src="./images/card/card-008.gif" alt="" />
+            </div>
           </div>
           <!--螢幕擷取區Finish-card-->
           <div class="Finish-card">
@@ -212,7 +220,7 @@
         e.target.value = "";
       });
 
-      for (let i = 0; i < 4; i++) {
+      for (let i = 0; i < 8; i++) {
         $($(".choose-card .small-card")[i]).on("click", function () {
           if ($(".card-template .photo").attr("style") !== undefined) {
             $(".choose-card .small-card").removeClass("small-card__active");
