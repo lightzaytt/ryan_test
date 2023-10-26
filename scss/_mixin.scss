@@ -1,0 +1,60 @@
+//手機螢幕
+@mixin phone() {
+  @media all and (min-width: $phone_min-width) and (max-width: $phone_max-width) {
+    @content;
+  }
+}
+
+//pad螢幕
+@mixin pad() {
+  @media all and (min-width: $pad_min-width) and (max-width: $pad_max-width) {
+    @content;
+  }
+}
+
+//桌機螢幕
+@mixin desktops() {
+  @media all and (min-width: $desktops_min-width)and (max-width: $desktops_max-width) {
+    @content;
+  }
+}
+
+//BIG桌機螢幕 IMAC
+@mixin big-desktops() {
+  @media all and (min-width: $big-desktops_min-width) {
+    @content;
+  }
+}
+
+//@字型引入-非連外部
+/* ProximaNova-400 - latin*/
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: 400;
+  src: url('../fonts/ProximaNova-Regular.otf') format("otf"),
+    url('../fonts/ProximaNova-Regular.woff') format("woff");
+}
+
+/* ProximaNova-500 - latin */
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: 500;
+  src: url('../fonts/ProximaNova-Semibold.otf') format("otf"),
+    url('../fonts/ProximaNova-Semibold.woff') format("woff"), ;
+}
+
+/* ProximaNova-700 - latin */
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: 700;
+  src: url('../fonts/ProximaNova-Bold.otf') format("otf"),
+    url('../fonts/ProximaNova-Bold.woff') format("woff"), ;
+}
+
+/* ProximaNova-700 - latin */
+@font-face {
+  font-family: 'ProximaNova';
+  font-weight: 900;
+  src: url('../fonts/ProximaNova-Black.otf') format("otf"),
+    url('../fonts/ProximaNova-Black.woff') format("woff"), ;
+}

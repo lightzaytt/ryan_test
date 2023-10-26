@@ -1,0 +1,38 @@
+//螢幕大小
+$phone_min-width: 320px; //手機，320像素及以上
+$phone_max-width: 799px; //手機，799像素及以上
+$pad_min-width: 800px; //筆電，800像素及以上
+$pad_max-width: 1200px; //筆電，1360像素及以上
+$desktops_min-width: 1201px; //桌機，1361px及以上
+$desktops_max-width: 1900px; //筆電，1360像素及以上
+$big-desktops_min-width: 1901px; //大桌機，2000px及以上IMAC
+
+//color
+//主要色系
+$primary-color: #F6BB00;
+$secondary1-color: #005EAD;
+
+
+//文字
+$textg0-color: #fff;
+$textg90-color: #414141;
+$textg60-color: #D9D9D9;
+
+
+
+//文字大小
+$font-size-Small: 16px !default; //基本
+$font-size-base: 18px !default;
+$font-size-Medium: 20px !default;
+$font-size-Medium2: 24px !default;
+$font-size-Large: 26px !default;
+$font-size-Large2: 40px !default;
+$font-size-Extralarge: 80px !default; //非常大的標題
+$font-size-webtitle: 50px !default;
+$font-size-subtitle: 20px !default;
+
+//文字粗細
+$font-weight-normal: 400 !default;
+$font-weight-Semibold: 500 !default;
+$font-weight-bold: 700 !default;
+$font-weight-Black: 900 !default;

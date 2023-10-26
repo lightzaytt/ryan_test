@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--網站基本設定 -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>20235中鼎文化感謝週</title>
+    <meta name="description" content="20235中鼎文化感謝週" />
+    <meta name="keywords" content="中鼎,文化" />
+    <meta name="copyright" content="本網頁著作權屬中鼎集團版權所有" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="20235中鼎文化感謝週" />
+    <meta property="og:description" content="20235中鼎文化感謝週" />
+    <!-- <meta property="og:image" content="分享圖網址" /> -->
+    <!-- <meta property="og:url" content="分享網址" /> -->
+    <link rel="icon" href="images/favicon.ico" />
+    <!--css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!--js -->
+    <script type="text/javascript" src="js/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script type="text/javascript" src="js/anime.min.js"></script>
+    <script type="text/javascript" src="js/html2canvas.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+
+  <body class="ctci-Team_Appreciation_Week">
+    <div class="top-kv">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-brand">
+            <a href=""><img src="images/logo.svg" alt="" class="logo-pic" /></a>
+          </div>
+          <div class="nav-menu">
+            <ul>
+              <li>Hi,</li>
+              <li>William</li>
+              <li class="language" onclick="Setlang('EN')">
+                <a href="#">EN</a>
+              </li>
+              <li class="language" onclick="Setlang('TW')">
+                <a href="#">TW</a>
+              </li>
+            </ul>
+            <botton class="hamburger" onclick="openmenu()"
+              ><img src="images/icon/hamburger.svg"
+            /></botton>
+          </div>
+        </div>
+        <ul id="secondarymenu">
+          <!--選單內容-->
+          <li><a href="##">Home</a></li>
+          <li><a href="##">About</a></li>
+          <li><a href="##">Graphy</a></li>
+          <li><a href="##">Intro</a></li>
+          <li><a href="##">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="MakeCard">
+      <div class="container-min">
+        <div class="web-title">
+          <h2>How to Make a Card</h2>
+          <div class="subtitle">
+            上傳照片 > 選擇卡片版型 > 輸入文字 > 填寫收件人
+          </div>
+        </div>
+        <div class="card-Preview">
+          <!--選擇卡片區choose-card-->
+          <div class="choose-card">
+            <div class="small-card small-card__active">
+              <img src="./images/card/card-001.gif" alt="" />
+            </div>
+            <div class="small-card">
+              <img src="./images/card/card-002.gif" alt="" />
+            </div>
+            <div class="small-card">
+              <img src="./images/card/card-003.gif" alt="" />
+            </div>
+            <div class="small-card">4</div>
+            <div class="small-card">5</div>
+            <div class="small-card">6</div>
+            <div class="small-card">7</div>
+            <div class="small-card">8</div>
+          </div>
+          <!--螢幕擷取區Finish-card-->
+          <div class="Finish-card">
+            <div class="card-block">
+              <div class="card-template">
+                <!--上傳-->
+                <input
+                  type="file"
+                  class="image_uploads"
+                  name="image_uploads"
+                  accept=".jpg, .jpeg, .png"
+                  style="
+                    position: absolute;
+                    width: 400px;
+                    height: 600px;
+                    z-index: 1;
+                  "
+                />
+                <!--上傳說明文字-->
+                <div class="upload-info">
+                  <h1>上傳照片</h1>
+                  拖曳照片至此，建議直式照片
+                  <br />
+                  檔案大小500KB以下，JPG檔
+                  <br />
+                  400*600px
+                </div>
+                <!-- 套版圖 -->
+                <div class="card"></div>
+                <!-- 上傳圖 -->
+                <div class="photo"></div>
+              </div>
+              <div class="card-Txt">
+                <div class="card-Txtcontent">
+                  <div class="Receive">
+                    <div class="job-number">12345678</div>
+                    <div class="company">CTCI Malaysia Sdn. Bhd.</div>
+                    <div class="name">carey WU</div>
+                  </div>
+                  <div class="Letter-content">
+                    <p>
+                      感謝我的同仁們！你們的協助和合作是我們工作順利的關鍵。你們的專業精神和奉獻精神每天都激勵著我們成長和超越。無論面對什麼挑戰，你們總是在那裡，為團隊提供支持和動力。你們的友誼和團結讓我們的工作環境充滿了溫暖和歡樂。謝謝你們的付出，讓我們一起繼續攜手前進，創造更多成功和美好的時刻！
+                    </p>
+                  </div>
+                  <div class="sender">
+                    <div class="job-number">12345678</div>
+                    <div class="company">CTCI Malaysia Sdn. Bhd.</div>
+                    <div class="name">carey WU</div>
+                  </div>
+                </div>
+                <div class="card-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button-block">
+          <!--上傳-->
+          <input
+            type="file"
+            class="image_uploads"
+            name="image_uploads"
+            accept=".jpg, .jpeg, .png"
+            style="position: absolute; width: 200px; height: 40px; z-index: 1"
+          />
+          <button type="submit" class="btn-icon uploadPic-button">
+            重新上傳照片
+          </button>
+        </div>
+      </div>
+      <div class="Sendform-block">
+        <div class="container-min">
+          <!-- <form> -->
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            placeholder="請輸入收件者e-mail或工號"
+          />
+          <textarea
+            class="form-control"
+            aria-label="With textarea"
+            placeholder="請寫下您的感謝語"
+          ></textarea>
+          <div class="align-right">＊字數限制100字元內</div>
+          <div class="button-block">
+            <button
+              onclick="block_capture()"
+              class="btn-icon downloadPic-button"
+            >
+              下載卡片
+            </button>
+            <button type="submit" class="btn-icon sendcard-button">
+              確認送出
+            </button>
+          </div>
+          <!-- </form> -->
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      活動詳情請洽各公司人力資源部 Copyright © 2023 CTCI. All rights reserve
+    </footer>
+
+    <script>
+      AOS.init();
+
+      $(".image_uploads").css("opacity", "0");
+
+      $(".MakeCard .image_uploads").change(function (e) {
+        const file = e.target.files[0];
+
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            const imageURL = e.target.result;
+
+            $(".card-template .photo").html(`<img src="${imageURL}" alt="" />`);
+          };
+          reader.readAsDataURL(file);
+        }
+        e.target.value = "";
+      });
+
+      for (let i = 0; i < 3; i++) {
+        $($(".choose-card .small-card")[i]).on("click", function () {
+          if ($(".card-template .photo img").length < 1) {
+            alert("請上傳圖片!!");
+          } else {
+            $(".choose-card .small-card").removeClass("small-card__active");
+            $($(".choose-card .small-card")[i]).addClass("small-card__active");
+            $(".card-template .card").html(
+              `<img src="./images/card/card-00${i + 1}.gif" alt="" />`
+            );
+            $(".card-template .card").html(
+              `<img src="./images/card/card-00${i + 1}.gif" alt="" />`
+            );
+            // 卡片背面
+            // $(".card-Txt .card-right").html(
+            //   `<img src="./images/card/card-test.gif" alt="">`
+            // );
+          }
+        });
+      }
+
+      $("textarea").bind("input propertychange", function () {
+        $(".Letter-content p").text($(this).val());
+      });
+    </script>
+  </body>
+</html>

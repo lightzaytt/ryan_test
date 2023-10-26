@@ -1,0 +1,353 @@
+@import "normalize";
+@import "variables";
+@import "mixin";
+
+// @include big-desktops{}
+// @include desktops {}
+// @include pad {}
+// @include phone {}
+
+* {
+  box-sizing: border-box;
+  font-weight: $font-weight-normal;
+  font-size: $font-size-base;
+  position: relative;
+  width: 100%;
+  letter-spacing: 0.5px;
+  color: $textg90-color;
+  font-family: ProximaNova, Noto Sans TC, Microsoft JhengHei, 新細明體, Arial,
+    sans-serif;
+  line-height: 28px;
+}
+
+.ctci-Team_Appreciation_Week {
+  .container-small {
+    max-width: 750px !important;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .container {
+    max-width: 1400px !important;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .container-full {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .container-min {
+    max-width: 1010px !important;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    .button-block {
+      display: flex;
+      justify-content: center;
+
+      .btn-icon {
+        padding: 5px;
+        margin: 5px;
+        max-width: 200px;
+        border-radius: 5px;
+        background-color: $secondary1-color;
+        border: 0;
+        color: $textg0-color;
+      }
+    }
+  }
+
+  .top-kv {
+    //主視覺//
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    animation: fadeIn;
+    animation-duration: 1s;
+    background-image: url(../images/KV/001.jpg);
+    height: 500px;
+
+    //主選單//
+    nav.navbar {
+      padding: 5px 0px;
+      display: flex;
+      width: 100%;
+      flex-wrap: nowrap;
+
+      .navbar-brand {
+        width: 100px;
+
+        .logo-pic {
+          max-height: 50px;
+          display: inline-block;
+          animation: fadeIn;
+          animation-duration: 1s;
+        }
+      }
+
+      .nav-menu {
+        text-align: end;
+        animation: fadeIn;
+        animation-duration: 1s;
+        display: flex;
+        align-items: center;
+
+        ul {
+          margin-top: 10px;
+          margin-bottom: 10px;
+
+          li {
+            list-style: none;
+            padding-left: 5px;
+            display: inline;
+            color: $textg0-color;
+          }
+
+          li {
+            &:last-child {
+              &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                z-index: 2;
+                width: 24px;
+                height: 1px;
+                background-color: #ffffff61;
+                left: -11px;
+                top: 10px;
+              }
+            }
+
+            a {
+              width: 40px;
+              height: 40px;
+              color: $textg0-color;
+              display: inline-block;
+              line-height: 40px;
+              text-align: center;
+            }
+          }
+        }
+
+        .hamburger {
+          max-width: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    #secondarymenu {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      list-style: none;
+      top: 70px;
+      z-index: 20;
+      padding: 0;
+      backdrop-filter: blur(10px);
+      display: none;
+
+      li {
+        a {
+          color: $textg0-color;
+          display: block;
+          margin: 0 auto;
+          line-height: 40px;
+          transition: all 0.3s linear;
+
+          &:hover {
+            color: $textg90-color;
+            background-color: $textg0-color;
+          }
+        }
+      }
+    }
+  }
+
+  //共用標題樣式//
+  .web-title {
+    text-align: center;
+    margin-top: 70px;
+
+    h2 {
+      font-size: $font-size-webtitle;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: $font-size-subtitle;
+      margin-bottom: 40px;
+    }
+  }
+
+  //卡片製作//
+  .MakeCard {
+    .card-Preview {
+      display: flex;
+      padding-bottom: 15px;
+
+      .choose-card {
+        display: flex;
+        max-width: 210px;
+        flex-wrap: wrap;
+
+        .small-card {
+          display: block;
+          width: 90.67px;
+          height: 136px;
+          background-color: $textg60-color;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          cursor: pointer;
+
+          &__active {
+            border: 3px solid $primary-color;
+          }
+        }
+      }
+
+      .Finish-card {
+        display: block;
+        width: 800px;
+        height: 600px;
+
+        .card-block {
+          display: flex;
+          position: relative;
+
+          .card-template,
+          .card-Txt {
+            width: 400px;
+            height: 600px;
+
+            .Receive {
+              .information {
+              }
+            }
+          }
+
+          .card-template {
+            background-color: #fff571;
+            background-image: url(../images/icon/upload.svg);
+            background-size: 270px;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+
+            .upload-info {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              text-align: center;
+              font-weight: $font-weight-bold;
+            }
+
+            .card {
+              position: absolute;
+              z-index: 5;
+              background-color: #fff0;
+              pointer-events: none;
+              top: -1px;
+              left: -1px;
+
+              img {
+                width: 400px;
+                height: 600px;
+              }
+            }
+
+            .photo {
+              a {
+                height: 100%;
+                display: block;
+              }
+            }
+          }
+
+          .card-Txt {
+            background-color: $textg60-color;
+
+            .card-Txtcontent {
+              padding: 50px;
+              .Letter-content {
+                min-height: 230px;
+                p {
+                  word-break: break-all;
+                }
+              }
+              .Receive {
+                padding-bottom: 50px;
+              }
+
+              .sender {
+                text-align: right;
+                padding-top: 30px;
+              }
+            }
+            .card-right {
+              position: absolute;
+              z-index: 5;
+              top: -1px;
+              left: -1px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card-info {
+    text-align: center;
+    padding-bottom: 30px;
+    letter-spacing: 10px;
+  }
+
+  .Sendform-block {
+    padding-bottom: 40px;
+
+    .form-control {
+      margin-bottom: 20px;
+    }
+
+    .button-block {
+      display: flex;
+      justify-content: center;
+
+      .btn-icon {
+        padding: 5px;
+        margin: 5px;
+        max-width: 200px;
+        border-radius: 5px;
+        background-color: $secondary1-color;
+        border: 0;
+        color: $textg0-color;
+      }
+    }
+  }
+
+  footer {
+    background-color: $textg90-color;
+    color: $textg0-color;
+    text-align: center;
+    padding: 10px 0px;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .align-right {
+    text-align: right;
+  }
+}
